@@ -8,8 +8,10 @@ import Footer from './components/Footer';
 import template from './assets/template';
 import { Music } from './components/Sections/Music';
 import { Movie } from './components/Sections/Movie';
+import Carrossel from './components/Carrossel';
 
 function App() {
+
   return (
     <>
       <Header links={template.links} />
@@ -50,6 +52,9 @@ function App() {
           <img src={template.modaSection.imgs[1]} className='h-full object-cover col-span-2' />
           <img src={template.modaSection.imgs[3]} className='h-full object-cover' />
         </div>
+      </TTD>
+      <TTD body={template.literaturaSection}>
+        <Carrossel content={template.literaturaSection.books} />
       </TTD>
       <Footer />
     </>

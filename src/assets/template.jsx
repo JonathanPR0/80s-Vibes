@@ -21,6 +21,11 @@ import moda1 from './moda/moda1.jpg';
 import moda2 from './moda/moda2.webp';
 import moda3 from './moda/moda3.webp';
 import moda4 from './moda/moda4.jpg';
+import it from './literatura/it.jpg';
+import leveza from './literatura/leveza.jpg';
+import christine from './literatura/christine.jpg';
+import brumas from './literatura/brumas.jpg';
+import menino from './literatura/menino.jpg';
 
 const template = {
   links: [
@@ -65,7 +70,7 @@ const template = {
         name: "Beat It",
         releaseYear: "1982",
         singer: "Michael Jackson",
-        description: "As Músicas dos anos 80 marcaram uma época de grandes mudanças na cultura e na sociedade. Elas refletiam os estilos musicais, as tendências da moda, as questões políticas e os sentimentos das pessoas. Conheça agora algumas das músicas mais famosas dessa década."
+        description: "Essa música misturava rock e pop, e tinha uma mensagem de desafio e rebeldia. O clipe mostrava uma coreografia impressionante e uma participação especial de Eddie Van Halen na guitarra."
       },
       {
         img: canttouch,
@@ -228,6 +233,51 @@ const template = {
       cols: 1,
     },
   ],
+  literaturaSection: {
+    sectionName: 'Literatura',
+    title: 'Uma Jornada de Diversidade e Emoção',
+    content: [
+      <p className="text-base">A literatura dos anos 80 foi marcada por uma diversidade de estilos e gêneros. Enquanto o movimento gótico sombrio impulsionava a procura por livros de suspense e terror, a década também trouxe obras de fantasia e romances cativantes. Os leitores podem encontrar uma rica variedade de autores e livros dessa época, mergulhando em histórias de aventura, explorando parques escuros com monstros imaginários ou se envolvendo em belos romances. Embora abaixo estejam listados cinco livros que retratam bem os anos 80, é importante destacar que existem inúmeras outras obras para serem desfrutadas dessa década.  </p>,
+    ],
+    books: [
+      {
+        title: "It: A coisa",
+        author: " Stephen King",
+        releaseYear: " 1986",
+        description: "Nesse clássico que inspirou os filmes da Warner, um grupo de amigos conhecido como Clube dos Otários aprende o real sentido da amizade, do amor, da confiança... e do medo. O mais profundo e tenebroso medo.",
+        img: it
+      },
+      {
+        title: "As Brumas de Avalon",
+        author: " Marion Zimmer Bradley",
+        releaseYear: " 1982",
+        description: "O livro é uma reinterpretação da lenda arturiana, contada sob a perspectiva das mulheres envolvidas na história. A trama se desenrola na mística ilha de Avalon, onde Morgana, uma sacerdotisa pagã, e sua meia-irmã Morgause, seguem caminhos diferentes na busca pelo poder e na influência sobre o rei Artur e o reino de Camelot.",
+        img: brumas
+      },
+      {
+        title: "O menino Maluquinho",
+        author: " Ziraldo",
+        releaseYear: " 1980",
+        description: 'A história gira em torno de um garoto muito criativo e cheio de energia, conhecido como "Menino Maluquinho". Ele vive diversas aventuras junto com sua turma de amigos, mostrando sua imaginação e espontaneidade. O livro aborda temas como infância, amizade, diversão e liberdade, retratando de forma leve e divertida as peripécias e descobertas do protagonista.',
+        img: menino
+      },
+      {
+        title: "A Insustentável Leveza do Ser",
+        author: " Milan Kundera",
+        releaseYear: " 1984",
+        description: "Uma obra que une ficção e filosofia por meio da história de quatro adultos capazes de quase tudo para vivenciar o erotismo que desejam para si. Tereza e Tomas, Sabina e Franz por força de suas escolhas ou por interferência do acaso, experimentam cada um deles e à sua maneira, o peso insustentável que baliza a vida, esse permanente exercício de reconhecer a opressão e de tentar amenizá-la.",
+        img: leveza
+      },
+      {
+        title: "Christine",
+        author: " Stephen King",
+        releaseYear: " 1983",
+        description: "Arnie Cunnigham era só mais um adolescente cheio de espinhas, magrelo e desajeitado. Isso até Christine entrar em sua vida. Foi amor à primeira vista. Desde então, o mundo ganhou cores e passou a fazer sentido. Tudo o que ele queria era ficar perto de Christine. Mas não espere um novo Romeu e Julieta, afinal, estamos falando de Stephen King. Christine é um carro. Um Plymouth Fury de 1958. Uma força sobrenatural que se apodera de Arnie e o transforma, deixando um rastro de sangue por onde passa.",
+        img: christine
+      },
+    ],
+    id: '#literature',
+  },
 };
 
 export default template;

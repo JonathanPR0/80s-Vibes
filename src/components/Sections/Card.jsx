@@ -7,7 +7,7 @@ const Card = ({ body, children, cols }) => {
         {body.title}
       </h3>
       {body.content}
-      <span className={`grid grid-cols-${cols} items-center gap-6 `}>
+      <span className={`grid grid-cols-${cols} items-center gap-6 mx-auto`}>
         {children ? children : null}
       </span>
     </div>
