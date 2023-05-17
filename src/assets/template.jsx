@@ -50,7 +50,7 @@ const template = {
       src: wallpaper,
       alt: 'vista de um entardecer próxima às áreas alagadas do Pantanal',
     },
-    id: 'introduction',
+    id: '#introduction',
   },
   musicsSection: {
     sectionName: 'Música',
@@ -106,7 +106,7 @@ const template = {
     ],
 
     background: 'bg-customGreen',
-    id: 'music',
+    id: '#music',
   },
   audiovisualSection: {
     sectionName: 'Audiovisual',
@@ -164,7 +164,7 @@ const template = {
     ],
 
     background: 'bg-primaryColors-200',
-    id: 'audiovisual',
+    id: '#audiovisual',
   },
   modaSection: {
     sectionName: 'Moda',
@@ -181,7 +181,7 @@ const template = {
       moda1, moda2, moda3, moda4
     ],
     background: 'bg-complementaryColors-600',
-    id: 'moda',
+    id: '#moda',
   },
   cards: [
     {
