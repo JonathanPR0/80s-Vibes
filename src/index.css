@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: white;
+  overflow-x: hidden;
+}
+table {
+  max-width: 100%;
+}
+tr {
+  box-sizing: border-box;
+  padding: 0.45rem;
+  border-radius: 4px;
+}
+td,
+th {
+  padding: 0.5rem;
+}
+@media (min-width: 768px) {
+  td,
+  th,
+  tr {
+    padding: 0.75rem auto;
+  }
+}
