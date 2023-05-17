@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useState } from 'react';
 import { GithubLogo } from 'phosphor-react';
 import { Link } from 'react-scroll';
@@ -9,6 +10,7 @@ function Header({ links }) {
   function handleClick() {
     setIsOpened(!isOpened);
   }
+
   const background = isOpened
     ? 'bg-secondaryColors-400 text-primaryColors-300'
     : 'bg-primaryColors-300 text-secondaryColors-400';
@@ -51,12 +53,12 @@ function Header({ links }) {
               </li>
             ))}
             <li className="uppercase md:hidden py-4 px-8 bg-white text-secondaryColors-400 text-base rounded-full">
-              <a href="https://www.instagram.com/biotrend.meca/" target="_blank">Conheça um pouco mais</a>
+              <a href="https://www.instagram.com/biotrend.meca/" target="_blank" rel="noreferrer">Conheça um pouco mais</a>
             </li>
             <li className="text-base font-normal">
               <a
                 href="https://github.com/JonathanPR0/pantanow"
-                className="flex flex-row md:hidden p-2" target="_blank"
+                className="flex flex-row md:hidden p-2" target="_blank" rel="noreferrer"
               >
                 <GithubLogo size={24} className="mr-1" />
                 Github
