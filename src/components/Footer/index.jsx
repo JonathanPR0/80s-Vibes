@@ -13,7 +13,7 @@ function Footer() {
             className="text-primaryColor-300 hover:underline underline-offset-1 transition-all"
             target="_blank" rel="noreferrer"
           >
-            JonathanPR0
+            JhonJhon
           </a>
         </p>
         <p className="mb-3">Todos os direitos reservados.</p>
