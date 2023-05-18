@@ -25,15 +25,16 @@ function Header({ links }) {
             } transition-colors`}
         >
           <span>
-            <Logo color={isOpened ? "#DFDDAE" : "#5D402A"} className="relative max-h-12 w-full z-50" />
+            <Logo color={isOpened ? "#DFDDAE" : "#5D402A"} className="relative max-h-10 w-full z-50" />
 
           </span>
         </h1>
         <nav className={`${isOpened ? 'active' : null}`}>
           <Hamburguer click={handleClick} />
           <ul
-            className={`w-full md:w-auto md:h-auto font-bold md:font-normal absolute top-12 md:top-0 left-0 flex flex-col md:flex-row items-center gap-y-12 pt-10 md:pt-0 ${background} ${isOpened ? 'h-screen visible' : 'h-0 pt-0 invisible'
-              } md:static transition-all ease-in text-2xl md:text-base md:visible`}
+            className={`w-full md:w-auto md:h-auto font-bold md:font-normal absolute top-12 md:top-0 left-0 flex flex-col md:flex-row items-center gap-y-10 
+            md:gap-y-12 md:pt-0 ${background} ${isOpened ? 'mt-[24px] h-screen visible pt-4' : 'h-0 pt-0 invisible'
+              } md:static transition-colors ease-in text-2xl md:text-base md:visible`}
           >
             {links.map((link, i) => (
               <li
@@ -44,7 +45,7 @@ function Header({ links }) {
                   to={link.href}
                   spy={true}
                   smooth={true}
-                  offset={-80}
+                  offset={-72}
                   duration={500}
                   onClick={() => setIsOpened(false)}
                 >
@@ -53,11 +54,11 @@ function Header({ links }) {
               </li>
             ))}
             <li className="uppercase md:hidden py-4 px-8 bg-white text-secondaryColors-400 text-base rounded-full">
-              <a href="https://www.instagram.com/biotrend.meca/" target="_blank" rel="noreferrer">Conheça um pouco mais</a>
+              <a href="https://www.instagram.com/meca4m/" target="_blank" rel="noreferrer">Conheça um pouco mais</a>
             </li>
             <li className="text-base font-normal">
               <a
-                href="https://github.com/JonathanPR0/pantanow"
+                href="https://github.com/JonathanPR0/80s-Vibes"
                 className="flex flex-row md:hidden p-2" target="_blank" rel="noreferrer"
               >
                 <GithubLogo size={24} className="mr-1" />

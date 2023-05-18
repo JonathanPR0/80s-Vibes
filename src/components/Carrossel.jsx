@@ -21,7 +21,7 @@ const Carousel = ({ content }) => {
   return (
     <div className="relative w-full rounded-md bg-primaryColors-400 max-w-[450px] mx-auto">
       <div>
-        <img src={content[currentImage].img} alt="Carousel Image" className='rounded-sm w-full object-cover  max-h-[700px]' />
+        <img src={content[currentImage].img} alt="Carousel Image" className='rounded-sm w-full object-cover h-full max-h-[700px]' />
         <div className='p-5 transition-all text-left'>
           <span className='flex items-center justify-between font-bold'>
             <h3 className='text-xl' >{content[currentImage].title} - {content[currentImage].releaseYear}</h3>
