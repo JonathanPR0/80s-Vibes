@@ -1,18 +1,12 @@
 /* eslint-disable react/jsx-key */
 import wallpaper from './wallpaper.jpg';
-import magicCube from './introduction/magicCube.jpg';
 import walkman from './introduction/walkman.jpg';
-import vinil1 from './introduction/vinil1.jpg';
-import vinil2 from './introduction/vinil2.jpg';
-import pacman from './introduction/pacman.jpg';
-import polaroid from './introduction/polaroid.jpg';
 import beatit from './musics/beatit.jpg';
 import brasil from './musics/brasil.jpg';
 import thriller from './musics/thriller.jpeg';
 import timeofmylife from './musics/timeofmylife.jpg';
 import finalcountdown from './musics/finalcountdown.jpg';
 import canttouch from './musics/canttouch.jpg';
-import karate from './movies/karate.jpg';
 import future from './movies/future.jpg';
 import terminator from './movies/terminator.jpg';
 import estrela from './movies/estrela.jpg';
@@ -21,11 +15,6 @@ import moda1 from './moda/moda1.jpg';
 import moda2 from './moda/moda2.webp';
 import moda3 from './moda/moda3.webp';
 import moda4 from './moda/moda4.jpg';
-import it from './literatura/it.jpg';
-import leveza from './literatura/leveza.jpg';
-import christine from './literatura/christine.jpg';
-import brumas from './literatura/brumas.jpg';
-import menino from './literatura/menino.jpg';
 
 const template = {
   links: [
@@ -122,7 +111,7 @@ const template = {
 
     movies: [
       {
-        img: karate,
+        img: "https://i.pinimg.com/564x/67/2e/07/672e070a3beb98136ced8161483f09ee.jpg",
         name: "The Karate Kid",
         releaseYear: "1984",
         gender: " Ação e drama",
@@ -193,7 +182,7 @@ const template = {
       title: 'Cubo Mágico',
       content:
         <p className="text-base text-left text-secondaryColors-400">O cubo mágico, inventado em 1974 por Ernő Rubik, alcançou seu auge nos anos 80. Trata-se de um quebra-cabeça tridimensional composto por um cubo dividido em seis faces coloridas, cada uma com nove quadrados menores. Seu objetivo é girar as faces até que cada uma contenha apenas uma cor. Nos anos 80, o cubo mágico se tornou um fenômeno global, símbolo da cultura pop da época e estimulando o interesse por matemática, lógica e arte.</p>,
-      imgs: [magicCube],
+      imgs: ["https://images.unsplash.com/photo-1539627831859-a911cf04d3cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80"],
       cols: 1,
     },
     {
@@ -207,14 +196,14 @@ const template = {
       title: 'Disco de Vinil',
       content:
         <p className="text-base text-left text-secondaryColors-400">O disco de vinil simboliza a cultura musical dos anos 80, sendo um formato de mídia que proporcionava alta fidelidade sonora e um apelo estético encantador. Ele era amplamente utilizado para lançamentos de álbuns de artistas renomados e novos talentos, abrangendo diversos gêneros musicais. Além de sua função musical, o vinil era valorizado como objeto de coleção e troca, refletindo a expressão e identidade dos jovens da época.</p>,
-      imgs: [vinil1, vinil2],
+      imgs: ["https://images.unsplash.com/photo-1582730147924-d92f4da00252?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80", "https://cdn.pixabay.com/photo/2021/01/28/22/10/vinyl-record-5959161_1280.jpg"],
       cols: 2,
     },
     {
       title: 'Pac-Man',
       content:
         <p className="text-base text-left text-secondaryColors-400">O icônico jogo Pac-Man foi criado por Toru Iwatani e lançado em 22 de maio de 1980 pela Namco. Iwatani tinha o objetivo de atrair o público feminino aos fliperamas, onde as mulheres não mostravam tanto interesse na época. O jogo foi um enorme sucesso nos anos 80, tornando-se uma verdadeira febre presente em todos os fliperamas e com campeonatos televisados. </p>,
-      imgs: [pacman],
+      imgs: ["https://images.unsplash.com/photo-1579309401389-a2476dddf3d4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"],
       cols: 1,
     },
     {
@@ -229,7 +218,7 @@ const template = {
       content:
         <p className="text-base text-left text-secondaryColors-400">Em 1981, as câmeras Polaroid chegaram ao mercado. Sua proposta era oferecer aos usuários uma maneira fácil e prática de registrar momentos importantes de sua vida, uma vez que a foto era impressa pela própria máquina, logo após a fotografia ser feita, sem a necessidade de produtos químicos ou algo semelhante.
         </p>,
-      imgs: [polaroid],
+      imgs: ["https://images.unsplash.com/photo-1605722625766-a4c989c747a4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"],
       cols: 1,
     },
   ],
@@ -241,39 +230,39 @@ const template = {
     ],
     books: [
       {
-        title: "It: A coisa",
+        title: "Tripulação de Esqueletos",
         author: " Stephen King",
-        releaseYear: " 1986",
-        description: "Nesse clássico que inspirou os filmes da Warner, um grupo de amigos conhecido como Clube dos Otários aprende o real sentido da amizade, do amor, da confiança... e do medo. O mais profundo e tenebroso medo.",
-        img: it
+        releaseYear: " 1985",
+        description: "A história acompanha um grupo de jovens amigos que decidem explorar uma antiga casa mal-assombrada. No entanto, eles logo descobrem que a casa abriga segredos sombrios e perigosos. Ao longo da narrativa, os personagens são confrontados por uma tripulação de piratas mortos-vivos, desafiando-os a enfrentar seus medos e lutar pela sobrevivência. Com elementos de aventura, mistério e horror, o livro envolve os leitores em uma emocionante jornada repleta de suspense e reviravoltas.",
+        img: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQjD5N9oCw7tv60-iZNFlP7slsE0WEJMzhl0DEvHcPt_vAl2nFn_awt263ybQlk7iK2AfI1ga_5qZlkeSPKe3cEZ5PgzRZCuGuL9Snx6jg&usqp=CAE"
       },
       {
         title: "As Brumas de Avalon",
         author: " Marion Zimmer Bradley",
         releaseYear: " 1982",
         description: "O livro é uma reinterpretação da lenda arturiana, contada sob a perspectiva das mulheres envolvidas na história. A trama se desenrola na mística ilha de Avalon, onde Morgana, uma sacerdotisa pagã, e sua meia-irmã Morgause, seguem caminhos diferentes na busca pelo poder e na influência sobre o rei Artur e o reino de Camelot.",
-        img: brumas
-      },
-      {
-        title: "O menino Maluquinho",
-        author: " Ziraldo",
-        releaseYear: " 1980",
-        description: 'A história gira em torno de um garoto muito criativo e cheio de energia, conhecido como "Menino Maluquinho". Ele vive diversas aventuras junto com sua turma de amigos, mostrando sua imaginação e espontaneidade. O livro aborda temas como infância, amizade, diversão e liberdade, retratando de forma leve e divertida as peripécias e descobertas do protagonista.',
-        img: menino
+        img: "https://m.media-amazon.com/images/I/91+Pm8ONPUL.jpg"
       },
       {
         title: "A Insustentável Leveza do Ser",
         author: " Milan Kundera",
         releaseYear: " 1984",
         description: "Uma obra que une ficção e filosofia por meio da história de quatro adultos capazes de quase tudo para vivenciar o erotismo que desejam para si. Tereza e Tomas, Sabina e Franz por força de suas escolhas ou por interferência do acaso, experimentam cada um deles e à sua maneira, o peso insustentável que baliza a vida, esse permanente exercício de reconhecer a opressão e de tentar amenizá-la.",
-        img: leveza
+        img: "https://m.media-amazon.com/images/I/81U1hX2wybS.jpg"
       },
       {
         title: "Christine",
         author: " Stephen King",
         releaseYear: " 1983",
         description: "Arnie Cunnigham era só mais um adolescente cheio de espinhas, magrelo e desajeitado. Isso até Christine entrar em sua vida. Foi amor à primeira vista. Desde então, o mundo ganhou cores e passou a fazer sentido. Tudo o que ele queria era ficar perto de Christine. Mas não espere um novo Romeu e Julieta, afinal, estamos falando de Stephen King. Christine é um carro. Um Plymouth Fury de 1958. Uma força sobrenatural que se apodera de Arnie e o transforma, deixando um rastro de sangue por onde passa.",
-        img: christine
+        img: "https://m.media-amazon.com/images/I/81qtUiLhGWL.jpg"
+      },
+      {
+        title: "It: A coisa",
+        author: " Stephen King",
+        releaseYear: " 1986",
+        description: "Nesse clássico que inspirou os filmes da Warner, um grupo de amigos conhecido como Clube dos Otários aprende o real sentido da amizade, do amor, da confiança... e do medo. O mais profundo e tenebroso medo.",
+        img: "https://m.media-amazon.com/images/I/91g9Dvtf+jL.jpg"
       },
     ],
     id: '#literature',
