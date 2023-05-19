@@ -1,5 +1,4 @@
-import React from 'react';
-
+/* eslint-disable react/prop-types */
 const Card = ({ body, children, cols }) => {
   return (
     <div className="flex justify-center flex-col w-full p-6 rounded-md border border-complementaryColors-300 gap-4">

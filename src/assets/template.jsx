@@ -64,7 +64,6 @@ const template = {
       {
         img: canttouch,
         name: "U Can't Touch This",
-        releaseYear: "1990",
         singer: "MC Hammer",
         description: 'Hit ganhou vários prêmios, incluindo dois Grammys, e foi usada em diversos filmes, comerciais e paródias. Além disso, também popularizou a expressão "Hammer time", que se refere ao momento em que Hammer começa a dançar com seus passos característicos.'
       },
